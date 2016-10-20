@@ -24,7 +24,7 @@ $(document).ready(function () {
         });
         
         $('.icon-menu').css('pointer-events','none');
-        // $('body').css('overflow-y','hidden');
+        $('body').css('overflow-y','hidden');
         
     });
     
@@ -44,6 +44,6 @@ $(document).ready(function () {
         });
         
         $('.icon-menu').css('pointer-events','auto');
-        // $('body').css('overflow-y','auto');
+        $('body').css('overflow-y','auto');
     });
 });
