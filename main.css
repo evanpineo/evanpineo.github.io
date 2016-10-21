@@ -1,5 +1,10 @@
+@media screen and (min-width: 1200px) {
+    #trails-bg {
+        background: #ffffff url("images/downhill-mtb-lg.jpg") center top fixed no-repeat !important;
+    }
+}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .about, .interests, .hobbies, .container img, #coraimg, .intro {
         max-width: 45% !important;
     }
@@ -14,33 +19,29 @@
     .abut {
         margin-bottom: 20px;
     }
-    html#mtb-bg {
-        background: #d4d7dc url(images/downhill-mtb.jpg) no-repeat center center fixed !important;
+    #trails-bg {
+        background: #ffffff url("images/downhill-mtb-sm.jpg") center top fixed no-repeat !important;
         background-size: cover !important;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover !important;
-        -o-background-size: cover !important;
     }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
     .fb-imgs img {
         max-width: 40% !important;
         margin-right: 10px;
     }
 }
 
-html {
-    height: 100%;
-    min-height: 100%;
-}
 
-body.mtb {
-    background-color: transparent;
-    position: relative;
-    overflow-y: auto;
-    font-family: "Merriweather",Georgia,serif;
-    min-height: 100%;
+#trails-bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000000 url("images/downhill-mtb-sm.jpg") center top no-repeat;
+	background-size: 250%;
+	z-index: -1;
 }
 
 body {
@@ -49,14 +50,6 @@ body {
     overflow-y: auto;
     font-family: "Merriweather",Georgia,serif;
     min-height: 100%;
-}
-
-html#mtb-bg {
-    background: #d4d7dc url(images/downhill-mtb-sm.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 h1 {
@@ -115,11 +108,15 @@ a {
 .about, .interests, .hobbies, .intro {
     max-width: 100%;
     position: relative;
-    margin-left: 15px;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
 }
+
+.about, .interests, .hobbies {
+    margin-left: 15px;
+}
+
 .about-bg, .hobbies-bg, .interests-bg {
     padding-top: 15px;
 }
