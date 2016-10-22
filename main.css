@@ -1,37 +1,3 @@
-@media screen and (min-width: 1200px) {
-    #trails-bg {
-        background: #ffffff url("images/downhill-mtb-lg.jpg") center top fixed no-repeat !important;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .about, .interests, .hobbies, .container img, #coraimg, .intro {
-        max-width: 45% !important;
-    }
-    .fb-imgs img {
-        max-width: 20% !important;
-        margin: 10px 10px 10px 0;
-    }
-    .container img {
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-    .abut {
-        margin-bottom: 20px;
-    }
-    #trails-bg {
-        background: #ffffff url("images/downhill-mtb-sm.jpg") center top fixed no-repeat !important;
-        background-size: cover !important;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 767px) {
-    .fb-imgs img {
-        max-width: 40% !important;
-        margin-right: 10px;
-    }
-}
-
 
 #trails-bg {
 	width: 100%;
@@ -138,15 +104,14 @@ a {
 }
 
 .fb-imgs img {
-    max-width: 75%;
-    text-align: center;
-    margin-bottom: 20px;
+    max-width: 40%;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .trails-img {
     border: 5px black solid;
-    border-radius: 20px;
-    box-shadow: #403D3D 10px 10px 28px 2px;
+    border-radius: 8px;
 }
 
 .container img {
@@ -257,14 +222,22 @@ a {
 }
 .rotateRight {
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform-origin: 10% 10%;
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
 }
 .vanish {
     background-color: transparent;
 }
 .rotateLeft {
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform-origin: 10% 90%;
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
 }
 
 li.links-header a {
@@ -314,4 +287,38 @@ ul.audio li a {
     color: #d32f2f;
     margin-right: 10px;
     z-index: 1000;
+}
+
+
+@media (min-width: 600px) {
+    .fb-imgs img {
+        max-width: 28%;
+    }
+}
+
+@media (min-width: 768px) {
+    .about, .interests, .hobbies, .container img, #coraimg, .intro {
+        max-width: 45%;
+    }
+    .fb-imgs img {
+        max-width: 20%;
+    }
+    .container img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .abut {
+        margin-bottom: 20px;
+    }
+    #trails-bg {
+        background: #ffffff url("images/downhill-mtb-sm.jpg") center top fixed no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    #trails-bg {
+        background: #ffffff url("images/downhill-mtb-lg.jpg") center top fixed no-repeat;
+        background-size: cover;
+    }
 }
