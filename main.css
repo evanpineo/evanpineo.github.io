@@ -103,6 +103,10 @@ a {
     margin-bottom: 20px;
 }
 
+.fb-imgs {
+    padding-bottom: 100px;
+}
+
 .fb-imgs img {
     max-width: 40%;
     margin-top: 20px;
